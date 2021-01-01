@@ -105,5 +105,17 @@ class Get_HKCPA():
 
 if __name__ == '__main__':
     spider = Get_HKCPA()
-    spider.main(r'/Users/Documents/hkcpa', filename='HKCPA_Memberslist', allpages='no',startpage=2266,endpage=2266)
+    filename = 'HKCPA_Memberslist'
+    path = str(input("请输入保存路径(默认：c:\\hkcpa)："))
+    if path == '' :
+       path = r'c:\\hkcpa'
+    allpages = str(input("全部下载请输入‘yes’："))
+    if allpages != 'yes':
+        startpage = int(input('请输入下载起始页：'))
+        endpage = int(input('请输入下载结束页：'))
+    else:
+        allpages = 'yes'
+        startpage = 1
+        endpage = 2
+    spider.main(path,filename,allpages,startpage,endpage)
     # page = 'yes'，下载全部；否则按 page 下载
