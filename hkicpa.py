@@ -105,5 +105,5 @@ class Get_HKCPA():
 
 if __name__ == '__main__':
     spider = Get_HKCPA()
-    spider.main(r'/Users/chenlongxiu/Documents/hkcpa', filename='HKCPA_Memberslist', allpages='no',startpage=2266,endpage=2266)
+    spider.main(r'/Users/Documents/hkcpa', filename='HKCPA_Memberslist', allpages='no',startpage=2266,endpage=2266)
     # page = 'yes'，下载全部；否则按 page 下载

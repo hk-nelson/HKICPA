@@ -1,3 +1,2 @@
-add readme.txt
+download hkicpamember,just for study.
 
-succes.
